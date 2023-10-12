@@ -1,16 +1,15 @@
-.header {
+.site-header {
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  min-height: 20vh;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.header h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/header-bg.jpg");
 }
