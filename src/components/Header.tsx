@@ -9,12 +9,14 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   return (
     <header className="site-header">
       {currentPage === "Strona główna" ? (
-        <>
-          <h1 className="text-7xl">Wynajem Podnośników Koszowych</h1>
-          <h3 className="mt-4 text-3xl">
+        <div className="p-4 ">
+          <h1 className="text-7xl text-center">
+            Wynajem Podnośników Koszowych
+          </h1>
+          <h3 className="mt-4 text-3xl text-center">
             Wycinka drzew - Prace na wysokości - Usługi podnośnikiem
           </h3>
-        </>
+        </div>
       ) : (
         <>
           <h1 className="text-4xl font-bold">{currentPage}</h1>
