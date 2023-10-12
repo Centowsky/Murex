@@ -1,70 +1,62 @@
 import React, { useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
-import { FiPhone } from "react-icons/fi";
-import { FaBuilding } from "react-icons/fa";
+import logo from "../assets/logo.jpg";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import "../styles/components/Navbar.scss";
 
-const Navbar: React.FC = () => {
+const navItems = [
+  { text: "Strona Główna", link: "/" },
+  { text: "O nas", link: "/o-nas" },
+  { text: "Oferta", link: "/oferta" },
+  { text: "Galeria", link: "/galeria" },
+  { text: "Kontakt", link: "/kontakt" },
+];
+
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const navItems = [
-    { text: "Strona główna", link: "/" },
-    { text: "O nas", link: "/o-nas" },
-    { text: "Oferta", link: "/oferta" },
-    { text: "Galeria", link: "/galeria" },
-    { text: "Kontakt", link: "/kontakt" },
-  ];
-
   return (
-    <nav className="bg-white flex justify-between items-center">
-      <div className="w-1/3 text-center flex items-center px-2">
-        <a
-          href="/"
-          className="text-black text-lg font-semibold flex items-center"
-        >
-          <FaBuilding size={20} style={{ marginRight: "4px" }} /> Murex
-        </a>
-      </div>
-
-      <div className="w-1/3">
-        <div>
-          <span className="text-black flex items-center justify-center">
-            <FiPhone size={20} />
-            123456789
-          </span>
-        </div>
-      </div>
-
-      <div className="w-1/3 flex items-center justify-end md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="text-black hover:text-gray-300  py-4 px-2 "
-        >
-          <AiOutlineMenu size={24} />
-        </button>
-      </div>
-      {isOpen && (
-        <div className="md:hidden absolute top-16 right-4 bg-blue-500 p-4 space-y-2">
-          {navItems.map((item, index) => (
+    <nav className="bg-white py-4">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex items-center">
+          <img src={logo} alt="Logo" className="w-10 h-10 mr-2" />
+          <div className="text-xl font-bold text-orange-500">
+            Murex |
             <a
-              key={index}
-              href={item.link}
-              className="text-black block hover:text-gray-300"
+              className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 hover:ml-2"
+              href="tel:+48123456789"
             >
-              {item.text}
+              +48 123 456 789
             </a>
-          ))}
+          </div>
+          <div className="lg:hidden">
+            <button
+              onClick={toggleMenu}
+              className="block text-gray-700 hover:text-orange-500 focus:outline-none p-4"
+            >
+              {isOpen ? (
+                <AiOutlineClose className="w-6 h-6" />
+              ) : (
+                <AiOutlineMenu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
-      )}
 
-      <div className="hidden md:flex items-center space-x-4">
-        <ul className="flex space-x-4 px-4">
+        <ul
+          className={`lg:flex lg:space-x-4 ${
+            isOpen ? "block" : "hidden"
+          } mt-4 lg:mt-0`}
+        >
           {navItems.map((item, index) => (
             <li key={index}>
-              <a href={item.link} className="text-black hover:text-gray-300">
+              <a
+                href={item.link}
+                className="block text-gray-700 border-b-4 border-transparent transition duration-500 hover:text-orange-500 hover:border-orange-500 py-2 px-2"
+              >
                 {item.text}
               </a>
             </li>
