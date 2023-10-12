@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Header currentPage="asdasdasdsadasda" />
+      <Header currentPage="Strona główna" />
     </>
   );
 };

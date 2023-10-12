@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="w-10 h-10 mr-2" />
           <div className="text-xl font-bold text-orange-500">
-            Murex |
+            <a href="/">Murex</a> |
             <a
               className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 hover:ml-2"
               href="tel:+48123456789"
