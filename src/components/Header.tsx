@@ -7,18 +7,32 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   return (
-    <header className="site-header">
+    <>
       {currentPage === "Strona główna" ? (
-        <div className="p-4 ">
-          <h1 className="text-7xl text-center">
+        <header className="site-header h-screen flex items-center">
+          <h1 className="text-4xl md:text-7xl text-center">
             Wynajem Podnośników Koszowych
           </h1>
-          <h3 className="mt-4 text-3xl text-center">
+          <h3 className="mt-7 text-2xl md:text-4xl text-center">
             Wycinka drzew - Prace na wysokości - Usługi podnośnikiem
           </h3>
-        </div>
+          <div className="flex justify-center items-center py-4">
+            <div className="flex space-x-4 mt-36 md:mt-24">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-40">
+                <a href="/oferta" target="_blank">
+                  Oferta
+                </a>
+              </button>
+              <button className="bg-orange-500 hover-bg-orange-600 text-white font-bold py-2 px-4 rounded w-40">
+                <a href="/kontakt" target="_blank">
+                  Kontakt
+                </a>
+              </button>
+            </div>
+          </div>
+        </header>
       ) : (
-        <>
+        <header className="site-header">
           <h1 className="text-4xl font-bold">{currentPage}</h1>
           <h4>
             <a
@@ -29,9 +43,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
             </a>
             /<span className="text-xl px-2">{currentPage}</span>
           </h4>
-        </>
+        </header>
       )}
-    </header>
+    </>
   );
 };
 

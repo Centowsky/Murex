@@ -1,7 +1,5 @@
 .site-header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-family: "Gabarito", sans-serif;
   min-height: 20vh;
   color: #fff;
   display: flex;
@@ -10,6 +8,8 @@
   align-items: center;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../../assets/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
