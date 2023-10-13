@@ -29,7 +29,7 @@ const Navbar = () => {
               className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 hover:ml-2"
               href="tel:+48123456789"
             >
-              +48 123 456 789
+              +48 530-301-301
             </a>
           </div>
           <div className="lg:hidden">
