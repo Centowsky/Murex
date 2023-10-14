@@ -15,10 +15,10 @@ const MainCard: React.FC<MainCardProps> = ({ title, content, link, id }) => {
     >
       <div className="px-4 py-2 h-full flex flex-col justify-between">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-2xl font-bold text-white drop-shadow-lg">
+          <h2 className="text-3xl font-bold text-white drop-shadow-lg">
             {title}
           </h2>
-          <p className="text-white mt-2 drop-shadow-md">{content}</p>
+          <p className="text-white text-xl mt-2 drop-shadow-md">{content}</p>
         </div>
         <div className="px-4 py-2 flex justify-end">
           <a
