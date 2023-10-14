@@ -4,7 +4,28 @@
 
 #wycinka {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../../assets/wycinka.jpg");
+    url("../../assets/cards/wycinka.webp");
   background-size: cover;
   background-position: top;
+}
+
+#podnosniki {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/cards/podnosniki.webp");
+  background-size: cover;
+  background-position: top;
+}
+
+#dzwigi {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/cards/dzwigi.webp");
+  background-size: cover;
+  background-position: top;
+}
+
+#wysokosci {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/cards/wysokosci.webp");
+  background-size: cover;
+  background-position: right;
 }

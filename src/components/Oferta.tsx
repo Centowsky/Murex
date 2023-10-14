@@ -14,27 +14,28 @@ const Header: React.FC = () => {
       <div className="flex flex-wrap justify-center p-4">
         <MainCard
           id="wycinka"
-          title="Tytuł Karty 1"
-          content="To jest treść karty. Możesz tutaj dodać więcej informacji na temat karty."
-          link="https://example.com"
+          title="Wycinka i pielęgnacja drzew"
+          content="Specjalizujemy się w pielęgnacji i wycince drzew. Także w miejscach trudno dostępnych, blisko linii energetycznych, budynków, na terenach pod inwestycje, cmentarzach oraz parkach."
+          link="#"
         />
         <MainCard
-          id="wycinka"
-          title="Tytuł Karty 2"
-          content="To jest treść karty. Możesz tutaj dodać więcej informacji na temat karty."
-          link="https://example.com"
+          id="podnosniki"
+          title="Wynajem Podnośników Koszowych"
+          content="Wynajem Podnośników Koszowych
+          Prowadzimy wynajem podnośników koszowych o maksymalnej wysokości roboczej 19, 22, 27 i 42 metrów. Nasze podnośniki umożliwiają bezpieczne i komfortowe wykonywanie prac."
+          link=""
         />
         <MainCard
-          id="wycinka"
-          title="Tytuł Karty 3"
-          content="To jest treść karty. Możesz tutaj dodać więcej informacji na temat karty."
-          link="https://example.com"
+          id="dzwigi"
+          title="Wynajem dźwigów"
+          content="Oferujemy wynajem specjalistycznych dźwigów, żurawi samojezdnych 18 i 32 tony. Gotowych do wykonywania złożonych zleceń w zabudowie miejskiej, na budowach oraz w terenie."
+          link="#"
         />
         <MainCard
-          id="wycinka"
-          title="Tytuł Karty 4"
-          content="To jest treść karty. Możesz tutaj dodać więcej informacji na temat karty."
-          link="https://example.com"
+          id="wysokosci"
+          title="Prace na wysokości"
+          content="Wykonujemy prace na wysokości i alpinistyczne. Czyścimy rynny, montujemy siatki oraz reklamy, myjemy dachy i wymieniamy dachówki. Oferujemy #"
+          link="#"
         />
       </div>
     </div>
