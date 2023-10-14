@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         <MainCard
           id="wysokosci"
           title="Prace na wysokości"
-          content="Wykonujemy prace na wysokości i alpinistyczne. Czyścimy rynny, montujemy siatki oraz reklamy, myjemy dachy i wymieniamy dachówki. Oferujemy #"
+          content="Wykonujemy prace na wysokości i alpinistyczne. Czyścimy rynny, montujemy siatki oraz reklamy, myjemy dachy i wymieniamy dachówki. Oferujemy szeroki zakres usług."
           link="#"
         />
       </div>
