@@ -1,13 +1,18 @@
 import React from "react";
 
-interface MainCardProps {
+interface OfertaCardProps {
   title: string;
   content: string;
   link: string;
   id: string;
 }
 
-const MainCard: React.FC<MainCardProps> = ({ title, content, link, id }) => {
+const OfertaCard: React.FC<OfertaCardProps> = ({
+  title,
+  content,
+  link,
+  id,
+}) => {
   return (
     <div
       className="max-w-md main-card bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
@@ -23,7 +28,7 @@ const MainCard: React.FC<MainCardProps> = ({ title, content, link, id }) => {
         <div className="px-4 py-2 flex justify-end">
           <a
             href={link}
-            className="text-right w-fit border-b-2 border-orange-500 text-white text-sm font-light  px-4 rounded mt-2  transition-transform transform hover:translate-x-2"
+            className="text-right w-fit border-b-2 border-orange-500 text-white text-md font-light  px-4 rounded mt-2  transition-transform transform hover:translate-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,4 +40,4 @@ const MainCard: React.FC<MainCardProps> = ({ title, content, link, id }) => {
   );
 };
 
-export default MainCard;
+export default OfertaCard;
