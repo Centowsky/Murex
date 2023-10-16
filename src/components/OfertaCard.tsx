@@ -15,26 +15,26 @@ const OfertaCard: React.FC<OfertaCardProps> = ({
 }) => {
   return (
     <div
-      className="max-w-md main-card bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
+      className="max-w-fit min-h-[50vh] bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center flex flex-col justify-center"
       id={id}
     >
-      <div className="px-4 py-2 h-full flex flex-col justify-between">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-3xl font-bold text-white drop-shadow-lg">
-            {title}
-          </h2>
-          <p className="text-white text-xl mt-2 drop-shadow-md">{content}</p>
-        </div>
-        <div className="px-4 py-2 flex justify-end">
+      <div className="px-4 py-2">
+        <h2 className="text-4xl font-bold text-white drop-shadow-lg">
+          {title}
+        </h2>
+        <p className="text-white text-2xl mt-2 drop-shadow-md">{content}</p>
+      </div>
+      <div className="px-4 py-2 text-right">
+        <p className="transform hover:-translate-x-4 transition duration-500">
           <a
             href={link}
-            className="text-right w-fit border-b-2 border-orange-500 text-white text-md font-light  px-4 rounded mt-2  transition-transform transform hover:translate-x-2"
+            className=" border-b-2 border-orange-500 text-white text-lg font-light px-4 rounded mt-2 hover:border-orange-700  "
             target="_blank"
             rel="noopener noreferrer"
           >
             Więcej informacji
           </a>
-        </div>
+        </p>
       </div>
     </div>
   );

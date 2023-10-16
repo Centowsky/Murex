@@ -2,17 +2,13 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-blue-900 rounded-lg shadow-2xl p-6 m-4 min-h-[30vh] flex items-center justify-center transform transition-transform hover:scale-105 hover:shadow-3xl">
-      <div className="text-center text-white">
-        <p className="text-4xl font-extrabold">
-          Potrzebujesz więcej informacji?
+    <div className="min-h-[30vh] md:min-h-[40vh] lg:md:min-h-[30vh] bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 rounded-lg shadow-lg p-4 flex items-center justify-center">
+      <div className="text-center text-black whitespace-pre-line">
+        <p className="text-3xl p-2">
+          Masz więcej pytań? Skontaktuj się z nami:
         </p>
-        <p className="text-center text-2xl mt-4 ">
-          Skontaktuj się z nami:{" "}
-          <span className="font-bold text-amber-400">+48 530-301-301</span> lub
-          napisz na{" "}
-          <span className="font-bold text-amber-400">example@example.com</span>
-        </p>
+        <p className="text-3xl font-bold p-2">530-301-301</p>
+        <span className="text-3xl font-bold p-2">example@example.com</span>
       </div>
     </div>
   );

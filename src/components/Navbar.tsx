@@ -23,10 +23,10 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="w-10 h-10 mr-2" />
-          <div className="text-xl font-bold text-orange-500">
+          <div className="text-2xl font-bold text-orange-500">
             <a href="/">Murex</a> |
             <a
-              className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 hover:ml-2"
+              className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 "
               href="tel:+48530301301"
             >
               +48 530-301-301
@@ -49,7 +49,7 @@ const Navbar = () => {
         <ul
           className={`lg:flex lg:space-x-4 ${
             isOpen ? "block" : "hidden"
-          } mt-4 lg:mt-0`}
+          } mt-4 lg:mt-0 text-lg`}
         >
           {navItems.map((item, index) => (
             <li key={index}>
