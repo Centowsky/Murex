@@ -1,5 +1,10 @@
 import React from "react";
-import { FaTools, FaMoneyBillWave, FaClock } from "react-icons/fa";
+import {
+  FaTools,
+  FaMoneyBillWave,
+  FaClock,
+  FaInfoCircle,
+} from "react-icons/fa";
 
 interface FirmaCardProps {
   title: string;
@@ -11,12 +16,13 @@ const iconMap: { [key: string]: any } = {
   FaTools,
   FaMoneyBillWave,
   FaClock,
+  FaInfoCircle,
 };
 
 const FirmaCard: React.FC<FirmaCardProps> = ({ title, content, iconName }) => {
   const IconComponent = iconMap[iconName];
   return (
-    <div className="bg-orange-600 rounded-lg shadow-lg p-4 m-2">
+    <div className="min-h-[20vh] bg-orange-600 rounded-lg shadow-lg p-4 m-2 md:min-h-[30vh]">
       <div className="text-center">
         <p className="text-2xl font-bold text-white">
           {IconComponent && <IconComponent className="w-8 h-8" />}{" "}
