@@ -49,7 +49,7 @@ const Navbar = () => {
         <ul
           className={`lg:flex lg:space-x-4 ${
             isOpen ? "block" : "hidden"
-          } mt-4 lg:mt-0`}
+          } mt-4 lg:mt-0 text-lg`}
         >
           {navItems.map((item, index) => (
             <li key={index}>
