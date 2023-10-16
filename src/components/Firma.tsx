@@ -8,8 +8,8 @@ const Firma: React.FC = () => {
     <div className="bg-white w-full">
       <div className="text-center">
         <h1 className="text-black text-5xl font-bold mt-2 p-4 ">
-          Wycinka drzew Myślibórz
-          <span className="border-b-2 border-orange-500"> i okolice</span>
+          Wycinka drzew Myślibórz{" "}
+          <span className="border-b-2 border-orange-500">i okolice</span>
         </h1>
       </div>
       <div className="flex flex-wrap justify-center p-4">

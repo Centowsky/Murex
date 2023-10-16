@@ -6,8 +6,8 @@ const Oferta: React.FC = () => (
   <div className="bg-white w-full">
     <div className="text-center">
       <h1 className="text-black text-5xl font-bold mt-2 p-4">
-        Poznaj naszą
-        <span className="border-b-2 border-orange-500"> ofertę</span>
+        Poznaj naszą{" "}
+        <span className="border-b-2 border-orange-500">ofertę</span>
       </h1>
     </div>
     <div className="flex flex-wrap flex-row justify-center p-4 ">

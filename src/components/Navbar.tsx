@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="text-2xl font-bold text-orange-500">
             <a href="/">Murex</a> |
             <a
-              className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 hover:ml-2"
+              className="transition duration-500 border-b-4 ml-1 border-transparent hover:text-orange-600 hover:border-orange-600 "
               href="tel:+48530301301"
             >
               +48 530-301-301
