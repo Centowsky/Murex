@@ -4,6 +4,7 @@ import "../src/styles/App.scss";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -12,6 +13,7 @@ const App: React.FC = () => (
       <Route path="/o-nas" element={<About />} />
     </Routes>
     <ScrollToTopButton />
+    <Footer />
   </BrowserRouter>
 );
 
