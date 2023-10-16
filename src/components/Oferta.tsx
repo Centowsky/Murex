@@ -7,8 +7,8 @@ const Oferta: React.FC = () => {
     <div className="bg-white w-full">
       <div className="text-center">
         <h1 className="text-black text-4xl font-bold mt-2 p-4">
-          Poznaj naszą ofertę
-          <span className="border-b-2 border-orange-500">szą</span>
+          Poznaj na
+          <span className="border-b-2 border-orange-500">szą ofertę</span>
         </h1>
       </div>
       <div className="flex flex-wrap justify-center p-4">
@@ -20,7 +20,7 @@ const Oferta: React.FC = () => {
             link="#"
           />
         </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 items-center">
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
           <OfertaCard
             id="podnosniki"
             title="Wynajem Podnośników Koszowych"

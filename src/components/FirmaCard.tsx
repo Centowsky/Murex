@@ -22,7 +22,7 @@ const iconMap: { [key: string]: any } = {
 const FirmaCard: React.FC<FirmaCardProps> = ({ title, content, iconName }) => {
   const IconComponent = iconMap[iconName];
   return (
-    <div className="min-h-[30vh] bg-orange-600 rounded-lg shadow-lg p-4 flex flex-col items-center justify-center text-center relative">
+    <div className="min-h-[30vh] md:min-h-[40vh] lg:md:min-h-[30vh] bg-orange-600 rounded-lg shadow-lg p-4 flex flex-col items-center justify-center text-center relative">
       {IconComponent && (
         <IconComponent className="w-8 h-8 text-white top-2 left-2 absolute" />
       )}{" "}
