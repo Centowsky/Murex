@@ -7,7 +7,7 @@ const Firma: React.FC = () => {
   return (
     <div className="bg-white w-full">
       <div className="text-center">
-        <h1 className="text-black text-4xl font-bold mt-2 p-4 ">
+        <h1 className="text-black text-5xl font-bold mt-2 p-4 ">
           Wycinka drzew Myślibórz
           <span className="border-b-2 border-orange-500"> i okolice</span>
         </h1>
@@ -34,14 +34,14 @@ const Firma: React.FC = () => {
             iconName="FaClock"
           />
         </div>
-        <div className="sm:w-full md:w-2/3 p-4">
+        <div className="sm:w-full md:w-1/2 p-4">
           <FirmaCard
             title="Profesjonalny sprzęt i fachowa pomoc"
             content="Dysponujemy specjalistycznym sprzętem oraz doświadczonym zespołem specjalistów. Pracujemy w trudnym terenie oraz w parkach i na wypielęgnowanych trawnikach nie powodując zniszczeń."
             iconName="FaInfoCircle"
           />
         </div>
-        <div className="sm:w-full md:w-1/3 p-4">
+        <div className="sm:w-full md:w-1/2 p-4">
           <Baner />
         </div>
       </div>

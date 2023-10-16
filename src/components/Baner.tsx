@@ -2,17 +2,13 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="bg-orange-600 rounded-lg shadow-md p-4 m-2 min-h-[25vh] flex items-center justify-center ">
-      <div className="text-center text-white">
-        <p className="text-3xl font-extrabold">
-          Zadzwoń teraz:{" "}
-          <span className="font-bold text-amber-300">123-456-789</span>
+    <div className="min-h-[30vh] bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 rounded-lg shadow-lg p-4 flex items-center justify-center">
+      <div className="text-center text-black whitespace-pre-line">
+        <p className="text-3xl p-2">
+          Masz więcej pytań? Skontaktuj się z nami:
         </p>
-
-        <p className="text-center mt-4 text-lg">
-          lub napisz:{" "}
-          <span className="font-bold text-amber-300">example@example.com</span>
-        </p>
+        <p className="text-3xl font-bold p-2">530-301-301</p>
+        <span className="text-3xl font-bold p-2">example@example.com</span>
       </div>
     </div>
   );
