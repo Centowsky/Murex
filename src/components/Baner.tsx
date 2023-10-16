@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="bg-orange-600 rounded-lg shadow-md p-4 m-2 min-h-[30vh] flex items-center justify-center ">
+    <div className="bg-orange-600 rounded-lg shadow-md p-4 m-2 min-h-[25vh] flex items-center justify-center ">
       <div className="text-center text-white">
         <p className="text-3xl font-extrabold">
           Zadzwoń teraz:{" "}

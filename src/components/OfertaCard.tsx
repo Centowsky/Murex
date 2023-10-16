@@ -15,7 +15,7 @@ const OfertaCard: React.FC<OfertaCardProps> = ({
 }) => {
   return (
     <div
-      className="max-w-md main-card bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
+      className="max-w-md min-h-[50vh] bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
       id={id}
     >
       <div className="px-4 py-2 h-full flex flex-col justify-between">
