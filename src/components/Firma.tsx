@@ -12,7 +12,7 @@ const Firma: React.FC = () => {
           <span className="border-b-2 border-orange-500">i okolice</span>
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center p-4">
+      <div className="flex flex-wrap justify-center p-4 md:w-3/4 mx-auto">
         <div className="sm:w-full md:w-1/3 p-4">
           <FirmaCard
             title="12 lat doświadczenia"

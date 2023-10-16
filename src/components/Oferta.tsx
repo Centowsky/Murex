@@ -10,7 +10,7 @@ const Oferta: React.FC = () => (
         <span className="border-b-2 border-orange-500">ofertę</span>
       </h1>
     </div>
-    <div className="flex flex-wrap flex-row justify-center p-4 ">
+    <div className="flex flex-wrap flex-row justify-center p-4 md:w-3/4 mx-auto">
       {[
         {
           id: "wycinka",
