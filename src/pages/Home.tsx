@@ -4,6 +4,7 @@ import FirmaInfo from "../components/FirmaInfo";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Oferta from "../components/Oferta";
+import Wizytowka from "../components/Wizytowka";
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Oferta />
       <Firma />
       <FirmaInfo />
+      <Wizytowka />
     </>
   );
 };
