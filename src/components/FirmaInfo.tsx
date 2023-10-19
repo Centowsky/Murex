@@ -7,22 +7,20 @@ import info3 from "../assets/info3.webp";
 const FirmaInfo: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center">
-      <div className="w-full md:w-1/2">
-        <img src={Murex} alt="Firma Murex" className="object-cover w-full " />
+      <div className="w-full md:w-1/2 flex items-center justify-center">
+        <img src={Murex} alt="Firma Murex" className="object-cover h-96 p-2" />
       </div>
-      <div className="w-full md:w-1/2 p-4">
-        <h2 className="text-3xl font-bold mb-2 py-10">Nie boimy się wyzwań</h2>
-        <p className="text-xl font-light mb-4 py-10">
+      <div className="w-full md:w-1/2 h-96 p-2 flex flex-wrap flex-row items-center">
+        <h2 className="text-3xl font-bold">Nie boimy się wyzwań</h2>
+        <p className="text-xl font-light">
           Cum veniam amet nihil reprehenderit quis iure molestiae eveniet. Ipsam
           vel sunt impedit. Ducimus quia laboriosam et consequatur quos et
           iusto. Quo laborum libero ut eos in nulla commodi voluptatibus
           exercitationem. Laboriosam quo voluptate sapiente porro aut. Sint
-          quaerat consequatur odit ut repellat voluptas inventore. Voluptatibus
-          rerum non quia culpa quaerat quia sunt quasi earum. Ducimus sit non
-          consectetur error.
+          quaerat consequatur odit ut repellat voluptas inventore
         </p>
-        <p className="text-xl font-bold py-10">Jarosław Organista</p>
-        <div className="flex flex-row mt-2">
+        <p className="text-xl font-bold">Jarosław Organista</p>
+        <div className="flex flex-row">
           <img
             src={info1}
             alt="Zdjęcie Informacyjne nr 1"
