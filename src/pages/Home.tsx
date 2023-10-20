@@ -13,8 +13,8 @@ const Home: React.FC = () => {
       <Header currentPage="Strona główna" />
       <Oferta />
       <Firma />
-      <FirmaInfo />
-      {/* <Wizytowka /> */}
+      {/* <FirmaInfo /> */}
+      <Wizytowka />
     </>
   );
 };
