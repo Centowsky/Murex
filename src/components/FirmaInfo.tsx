@@ -19,7 +19,10 @@ const FirmaInfo: React.FC = () => {
           exercitationem. Laboriosam quo voluptate sapiente porro aut. Sint
           quaerat consequatur odit ut repellat voluptas inventore
         </p>
-        <p className="text-xl font-bold">Jarosław Organista</p>
+        <p className="text-xl font-bold p-2">
+          Jarosław{" "}
+          <span className=" border-b-2 border-orange-500">Organista</span>
+        </p>
         <div className="flex flex-row">
           <img
             src={info1}
