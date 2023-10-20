@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <Oferta />
       <Firma />
       <FirmaInfo />
-      <Wizytowka />
+      {/* <Wizytowka /> */}
     </>
   );
 };
