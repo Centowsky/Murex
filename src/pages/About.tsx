@@ -1,12 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import Onas from "../components/Onas";
+import Navbar from "../components/Navbar";
 
 const About: React.FC = () => {
   return (
     <>
       <Navbar />
       <Header currentPage="O nas" />
+      <Onas />
     </>
   );
 };

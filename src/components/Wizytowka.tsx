@@ -2,7 +2,7 @@ import React from "react";
 
 const Wizytowka: React.FC = () => {
   return (
-    <div className="rounded-lg shadow-lg w-full flex flex-col md:flex-row">
+    <div className="rounded-lg shadow-lg w-full flex flex-col md:flex-row p-4">
       {Array(3)
         .fill(null)
         .map((_, index) => (
