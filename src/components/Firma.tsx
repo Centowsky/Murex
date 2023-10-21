@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/components/Oferta.scss";
 import FirmaCard from "./FirmaCard";
-import Baner from "../components/Baner";
 
 const Firma: React.FC = () => {
   return (
-    <div className="bg-white w-screen">
+    <div className="bg-white w-full ">
       <div className="text-center">
-        <h1 className="text-black text-5xl font-bold mt-2 p-4 ">
+        <h1 className="text-black text-5xl font-bold mt-2">
           Wycinka drzew Myślibórz{" "}
           <span className="border-b-2 border-orange-500">i okolice</span>
         </h1>
@@ -40,9 +39,6 @@ const Firma: React.FC = () => {
             content="Dysponujemy specjalistycznym sprzętem oraz doświadczonym zespołem specjalistów. Pracujemy w trudnym terenie oraz w parkach."
             iconName="FaInfoCircle"
           />
-        </div>
-        <div className="w-full md:w-1/2 p-2">
-          <Baner />
         </div>
       </div>
     </div>

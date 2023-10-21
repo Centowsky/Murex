@@ -22,19 +22,18 @@ const iconMap: { [key: string]: any } = {
 const FirmaCard: React.FC<FirmaCardProps> = ({ title, content, iconName }) => {
   const IconComponent = iconMap[iconName];
   return (
-    <div className="min-h-[50vh] sm:min-h-[50vh] md:min-h-[30vh] lg:md:min-h-[25vh] items-center bg-gray-100 border border-gray-200 rounded-lg shadow-lg p-4 grid grid-rows-2 text-center relative">
+    <div className="min-h-[15vh] md:min-h-[30vh] bg-gray-100 border border-gray-200 rounded-lg shadow-lg p-4 flex flex-col sm:flex-wrap text-center items-center justify-center h-full relative my-auto">
       {IconComponent && (
         <IconComponent
-          className="w-8 h-8 text-orange-500 absolute top-2 left-2"
-          style={{ opacity: 0.3 }}
+          className="w-8 h-8 text-orange-500 absolute top-3 left-3"
+          style={{ opacity: 0.15 }}
         />
       )}
-      <p className="text-3xl md:text-2xl lg:text-xl font-bold text-black">
-        {title}
-      </p>
-      <p className="text-stone-900 text-2xl md:text-xl lg:text-lg row-span-2">
-        {content}
-      </p>
+      <div className="flex flex-col items-center justify-center">
+        {" "}
+        <h3 className="text-xl font-bold text-black">{title}</h3>
+        <p className="text-stone-900 text-lg">{content}</p>
+      </div>
     </div>
   );
 };

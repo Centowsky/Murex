@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Oferta from "../components/Oferta";
 import Wizytowka from "../components/Wizytowka";
+import Baner from "../components/Baner";
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Header currentPage="Strona główna" />
       <Oferta />
       <Firma />
+      <Baner />
       <FirmaInfo />
       <Wizytowka />
     </>

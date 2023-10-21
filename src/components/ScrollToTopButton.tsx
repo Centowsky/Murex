@@ -31,7 +31,7 @@ const ScrollToTopButton: React.FC = () => {
     <button
       className={`${
         showButton
-          ? "visible fixed right-2 bottom-2 z-10 bg-orange-500 p-3 rounded-full"
+          ? "visible fixed right-4 bottom-4 z-10 bg-orange-500 p-3 rounded-full"
           : "hidden"
       }`}
       onClick={scrollToTop}

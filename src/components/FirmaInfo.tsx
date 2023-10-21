@@ -6,7 +6,7 @@ import info3 from "../assets/info3.webp";
 
 const FirmaInfo: React.FC = () => {
   return (
-    <div className="w-screen max-w-full flex flex-col md:flex-row items-center">
+    <div className="w-screen h-screen max-w-full flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <img src={Murex} alt="Firma Murex" className="object-cover w-full" />
       </div>
