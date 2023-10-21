@@ -8,7 +8,7 @@ const Wizytowka: React.FC = () => {
         .map((_, index) => (
           <div
             key={index}
-            className="max-w-full border border-gray-400 bg-gray-100 min-h-[20vh] w-screen md:w-1/3 m-2 flex flex-col items-center justify-center"
+            className="max-w-full rounded-lg border border-gray-200 bg-gray-100 min-h-[20vh] w-screen md:w-1/3 m-1 flex flex-col items-center justify-center"
           >
             {index === 0 ? (
               <>
@@ -36,10 +36,7 @@ const Wizytowka: React.FC = () => {
                     <>
                       <li>Usługi dźwigowe Stargard</li>
                       <li>Podnośniki Koszowe Stargard</li>
-                      <li>
-                        Karczowanie działek, wycinanie krzaków, sprzątanie
-                        działek
-                      </li>
+                      <li>Karczowanie działek, wycinanie krzaków</li>
                     </>
                   )}
                 </ul>

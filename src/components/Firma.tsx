@@ -30,18 +30,18 @@ const Firma: React.FC = () => {
         <div className="sm:w-full md:w-1/2 lg:w-1/3 p-4">
           <FirmaCard
             title="Szybka realizacja"
-            content="Potrzebujesz pilnie oczyścić rynny albo usunąć zagrażające bezpieczeństwu drzewo? Pomożemy od ręki."
+            content="Potrzebujesz pilnie oczyścić rynny albo usunąć zagrażające bezpieczeństwu drzewo?"
             iconName="FaClock"
           />
         </div>
-        <div className="sm:w-full md:w-1/2 lg:w-1/3 p-4">
+        <div className="sm:w-full md:w-1/2 lg:w-1/2 p-4">
           <FirmaCard
             title="Profesjonalny sprzęt i fachowa pomoc"
             content="Dysponujemy specjalistycznym sprzętem oraz doświadczonym zespołem specjalistów. Pracujemy w trudnym terenie oraz w parkach."
             iconName="FaInfoCircle"
           />
         </div>
-        <div className="sm:w-full md:w-full lg:w-2/3 p-4">
+        <div className="sm:w-full md:w-1/2 p-4">
           <Baner />
         </div>
       </div>
