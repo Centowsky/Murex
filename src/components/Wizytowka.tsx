@@ -13,7 +13,7 @@ const Wizytowka: React.FC = () => {
             {index === 0 ? (
               <>
                 <h2 className="text-xl font-bold">MUREX Jarosław Organista</h2>
-                <p>Ławy, 74-300 Myślibórz</p>
+                <p>Ławy 32/1, 74-300 Myślibórz</p>
                 <p>
                   TEL:{" "}
                   <span className="text-orange-500 transform hover:transform hover:translate-x-2">

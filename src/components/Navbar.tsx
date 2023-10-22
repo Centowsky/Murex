@@ -8,7 +8,6 @@ const navItems = [
   { text: "O nas", link: "/o-nas" },
   { text: "Oferta", link: "/oferta" },
   { text: "Galeria", link: "/galeria" },
-  { text: "Kontakt", link: "/kontakt" },
 ];
 
 const Navbar = () => {
@@ -22,7 +21,10 @@ const Navbar = () => {
     <nav className="bg-white py-4">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="w-10 h-10 mr-2" />
+          {/* <img src={logo} alt="Logo" className="w-10 h-10 mr-2" /> */}
+          <span className="font-extrabold mr-2 flex items-start" id="logo">
+            GGG
+          </span>
           <div className="text-2xl font-bold text-orange-500">
             <a href="/">Murex</a> |
             <a
