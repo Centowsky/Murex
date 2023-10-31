@@ -33,13 +33,6 @@ const Firma: React.FC = () => {
             iconName="FaClock"
           />
         </div>
-        <div className="w-full md:w-1/2 lg:w-1/2 p-2">
-          <FirmaCard
-            title="Profesjonalny sprzęt i fachowa pomoc"
-            content="Dysponujemy specjalistycznym sprzętem oraz doświadczonym zespołem specjalistów. Pracujemy w trudnym terenie oraz w parkach."
-            iconName="FaInfoCircle"
-          />
-        </div>
       </div>
     </div>
   );

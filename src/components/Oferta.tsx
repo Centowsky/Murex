@@ -29,7 +29,8 @@ const Oferta: React.FC = () => (
         {
           id: "dzwigi",
           title: "Wynajem koparko-ładowarki",
-          content: "Oferujemy kompleksową gamę usług wynajmu koparki.",
+          content:
+            "Oferujemy kompleksową gamę usług wynajmu koparko-ładowarki i nie tylko.",
           link: "#",
         },
         {

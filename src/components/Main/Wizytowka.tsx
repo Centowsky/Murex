@@ -22,26 +22,27 @@ const Wizytowka: React.FC = () => {
                 </p>
                 <p>NIP: 597-156-33-173</p>
               </>
-            ) : (
+            ) : null}
+            {index === 1 ? (
+              <>
+                <p className="text-xl font-bold">
+                  Profesjonalny sprzęt i fachowa pomoc
+                </p>
+                <ul className="list-disc list-inside ml-4">
+                  <li>Specjalistyczny sprzęt</li>
+                  <li>Doświadczeni pracownicy</li>
+                </ul>
+              </>
+            ) : null}
+            {index === 2 ? (
               <>
                 <p className="text-xl font-bold">Usługi</p>
                 <ul className="list-disc list-inside ml-4">
-                  {index === 1 ? (
-                    <>
-                      <li>Wycinka i pielęgnacja drzew</li>
-                      <li>Prace na wysokości</li>
-                      <li>Usługi dźwigowe Stargard</li>
-                    </>
-                  ) : (
-                    <>
-                      <li>Usługi dźwigowe Stargard</li>
-                      <li>Podnośniki Koszowe Stargard</li>
-                      <li>Karczowanie działek, wycinanie krzaków</li>
-                    </>
-                  )}
+                  <li>Podnośniki Koszowe Myślibórz i okolice</li>
+                  <li>Karczowanie działek, wycinanie krzaków</li>
                 </ul>
               </>
-            )}
+            ) : null}
           </div>
         ))}
     </div>
