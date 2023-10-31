@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../src/styles/App.scss";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import ScrollToTopButton from "./components/ScrollToTopButton";
-import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/Main/ScrollToTopButton";
+import Footer from "./components/Main/Footer";
 
 const App: React.FC = () => (
   <BrowserRouter>

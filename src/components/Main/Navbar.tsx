@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import "../styles/components/Navbar.scss";
+import "../../styles/components/Navbar.scss";
 
 const navItems = [
   { text: "Strona Główna", link: "/" },

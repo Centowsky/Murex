@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Onas from "../components/Onas";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Main/Navbar";
 
 const About: React.FC = () => {
   return (
