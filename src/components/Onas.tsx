@@ -1,10 +1,8 @@
 import React from "react";
 import murex1 from "../assets/info1.webp";
 import murex2 from "../assets/info2.webp";
-import Firma from "./business/Firma";
-import FirmaInfo from "./business/FirmaInfo";
-import Wizytowka from "./main/Wizytowka";
 import "../styles/components/Oferta.scss";
+import Wizytowka from "./main/Wizytowka";
 
 const Onas: React.FC = () => {
   return (
@@ -71,8 +69,8 @@ const Onas: React.FC = () => {
           </div>
         </div>
       </div>
-      <Firma />
-      <FirmaInfo />
+      {/* <Firma />
+      <FirmaInfo /> */}
       <Wizytowka />
     </>
   );

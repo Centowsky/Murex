@@ -8,7 +8,7 @@ const Wizytowka: React.FC = () => {
         .map((_, index) => (
           <div
             key={index}
-            className="max-w-full rounded-lg border border-gray-200 bg-gray-100 min-h-[20vh] md:w-1/3 flex flex-col items-center justify-center mx-4 my-1 md:my-3"
+            className="max-w-full rounded-lg border bg-gray-100 md:bg-gray-300 border-gray-200 min-h-[20vh] md:w-1/3 flex flex-col items-center justify-center mx-4 my-1 md:my-3"
           >
             {index === 0 ? (
               <>
