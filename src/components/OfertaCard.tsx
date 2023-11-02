@@ -15,7 +15,7 @@ const OfertaCard: React.FC<OfertaCardProps> = ({
 }) => {
   return (
     <div
-      className="max-w-fit bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
+      className=" w-11/12 bg-white shadow-lg rounded-lg overflow-hidden m-4 text-center"
       id={id}
       style={{
         minHeight: "30rem",
