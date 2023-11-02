@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
 import Navbar from "../components/main/Navbar";
-import Slider from "../components/gallery/Slider";
+import Carousel from "../components/gallery/Carousel";
 
 const Gallery: React.FC = () => {
   return (
     <>
       <Navbar />
       <Header currentPage="Galeria" />
-      <Slider />
+      <Carousel />
     </>
   );
 };
