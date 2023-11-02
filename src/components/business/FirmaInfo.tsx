@@ -1,7 +1,7 @@
 import React from "react";
-import info1 from "../assets/info1.webp";
-import info2 from "../assets/info2.webp";
-import info3 from "../assets/info3.webp";
+import info1 from "../../assets/info1.webp";
+import info2 from "../../assets/info2.webp";
+import info3 from "../../assets/info3.webp";
 
 const FirmaInfo: React.FC = () => {
   return (

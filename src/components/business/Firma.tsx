@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/components/Oferta.scss";
 import FirmaCard from "./FirmaCard";
 
 const Firma: React.FC = () => {

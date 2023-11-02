@@ -1,8 +1,8 @@
 import React from "react";
 import murex1 from "../assets/info1.webp";
 import murex2 from "../assets/info2.webp";
-import Firma from "../components/Firma";
-import FirmaInfo from "../components/FirmaInfo";
+import Firma from "./business/Firma";
+import FirmaInfo from "./business/FirmaInfo";
 import Wizytowka from "./main/Wizytowka";
 import "../styles/components/Oferta.scss";
 
