@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/main/Header";
 import Navbar from "../components/main/Navbar";
 import OfertaComp from "../components/offers/Oferta";
 import "../styles/components/Oferta.scss";

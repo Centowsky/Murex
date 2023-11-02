@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header";
+import Header from "../main/Header";
 import Navbar from "../main/Navbar";
 import { useParams } from "react-router-dom";
 

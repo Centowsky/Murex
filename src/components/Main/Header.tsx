@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/Header.scss";
+import "../../styles/components/Header.scss";
 
 interface HeaderProps {
   currentPage: string;

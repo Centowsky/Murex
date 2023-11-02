@@ -1,8 +1,7 @@
 import React from "react";
-import murex1 from "../assets/info1.webp";
-import murex2 from "../assets/info2.webp";
-import "../styles/components/Oferta.scss";
-import Wizytowka from "./main/Wizytowka";
+import murex1 from "../../assets/info1.webp";
+import murex2 from "../../assets/info2.webp";
+import Wizytowka from "../main/Wizytowka";
 
 const Onas: React.FC = () => {
   return (
