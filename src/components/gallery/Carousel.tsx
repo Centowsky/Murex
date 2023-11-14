@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import s1 from "../../assets/slider/1.webp";
+import s2 from "../../assets/slider/2.webp";
+import s3 from "../../assets/slider/3.webp";
+import s4 from "../../assets/slider/4.webp";
+import s5 from "../../assets/slider/5.webp";
+import s6 from "../../assets/slider/6.webp";
+import s7 from "../../assets/slider/7.webp";
+import s8 from "../../assets/slider/8.webp";
+import s9 from "../../assets/slider/9.webp";
 
-const images = [
-  "https://via.placeholder.com/400x200?text=Slide%201",
-  "https://via.placeholder.com/400x200?text=Slide%202",
-  "https://via.placeholder.com/400x200?text=Slide%203",
-];
+const images = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,20 +25,28 @@ const Carousel: React.FC = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Zmiana co 5 sekund
+
+    // Wyczyszczenie interwału po opuszczeniu komponentu
+    return () => clearInterval(interval);
+  }, [currentIndex]); // Uruchomienie efektu przy zmianie currentIndex
 
   return (
-    <div className="relative w-full">
-      <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
+    <div className="relative min-w-screen min-h-screen bg-gray-200 flex items-center justify-center">
+      <div className="relative h-3/4 sm:h-4/5 lg:h-3/5 xl:h-2/3 overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
             className={`${
               index === currentIndex ? "block" : "hidden"
-            } duration-700 ease-in-out absolute w-full h-full`}
+            } duration-700 ease-in-out w-full h-full flex items-center justify-center`}
           >
             <img
               src={image}
-              className="absolute block w-full h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="max-h-screen max-w-full object-cover"
               alt={`Slide ${index + 1}`}
             />
           </div>
@@ -45,7 +58,7 @@ const Carousel: React.FC = () => {
             key={index}
             type="button"
             className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+              index === currentIndex ? "bg-orange-500" : "bg-blue-300"
             }`}
             aria-current={index === currentIndex ? "true" : "false"}
             aria-label={`Slide ${index + 1}`}
