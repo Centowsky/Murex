@@ -15,8 +15,7 @@ const Oferta: React.FC = () => (
         {
           id: "wycinka",
           title: "Wycinka i pielęgnacja drzew",
-          content:
-            "Specjalizujemy się w pielęgnacji i wycince drzew. Także w miejscach trudno dostępnych, budynków, na terenach pod inwestycje, cmentarzach oraz parkach.",
+          content: "W każdym miejscu, nawet trudno dostępnym.",
           link: "/oferta/wycinka",
         },
         {

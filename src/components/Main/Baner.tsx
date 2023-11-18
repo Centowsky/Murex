@@ -9,7 +9,6 @@ const Banner: React.FC = () => {
             Masz więcej pytań? Skontaktuj się z nami:
           </p>
           <p className="text-2xl font-bold p-2">530-301-301</p>
-          <span className="text-2xl font-bold p-2">jareko2222@op.pl</span>
         </div>
       </div>
     </div>

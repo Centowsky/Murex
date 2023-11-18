@@ -16,6 +16,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
           <h3 className="mt-7 text-2xl md:text-4xl text-center">
             Wycinka drzew - Prace na wysokości - Usługi podnośnikiem
           </h3>
+          <h3 className="mt-7 text-2xl md:text-4xl text-center">
+            Usługi koparko-ładowarką
+          </h3>
           <div className="flex justify-center items-center py-4">
             <div className="flex space-x-4 mt-36 md:mt-24">
               <button className="text-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-40 hover:shadow-lg transform hover:scale-105 transition duration-500 ease-in-out">
