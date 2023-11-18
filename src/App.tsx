@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../src/styles/App.scss";
 import Footer from "./components/main/Footer";
 import ScrollToTopButton from "./components/main/ScrollToTopButton";
@@ -10,7 +10,7 @@ import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 
 const App: React.FC = () => (
-  <BrowserRouter>
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/o-nas" element={<About />} />
@@ -20,7 +20,7 @@ const App: React.FC = () => (
     </Routes>
     <ScrollToTopButton />
     <Footer />
-  </BrowserRouter>
+  </Router>
 );
 
 export default App;
