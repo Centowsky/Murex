@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a32d059.css",
+    "main.js": "/static/js/main.885a2165.js",
+    "static/media/4.webp": "/static/media/4.7eba0788b78ea503c66d.webp",
+    "static/media/header-bg.webp": "/static/media/header-bg.7eba0788b78ea503c66d.webp",
+    "static/media/3.webp": "/static/media/3.bf2f17073ceb7129793f.webp",
+    "static/media/info3.webp": "/static/media/info3.bf2f17073ceb7129793f.webp",
+    "static/media/7.webp": "/static/media/7.0bb755c4df350b6b8f61.webp",
+    "static/media/podnosniki.webp": "/static/media/podnosniki.0bb755c4df350b6b8f61.webp",
+    "static/media/5.webp": "/static/media/5.bd59423ab8ccccc428e9.webp",
+    "static/media/dzwigi.webp": "/static/media/dzwigi.bd59423ab8ccccc428e9.webp",
+    "static/media/9.webp": "/static/media/9.4fca325649166e076412.webp",
+    "static/media/wysokosci.webp": "/static/media/wysokosci.4fca325649166e076412.webp",
+    "static/media/6.webp": "/static/media/6.e164de77cd24d6e2921d.webp",
+    "static/media/1.webp": "/static/media/1.41ed1a1f4057bed61804.webp",
+    "static/media/info1.webp": "/static/media/info1.41ed1a1f4057bed61804.webp",
+    "static/media/8.webp": "/static/media/8.0a09f6b80be8d287980f.webp",
+    "static/media/wycinka.webp": "/static/media/wycinka.0a09f6b80be8d287980f.webp",
+    "static/media/2.webp": "/static/media/2.d0159976950ae704cf8d.webp",
+    "static/media/info2.webp": "/static/media/info2.d0159976950ae704cf8d.webp",
+    "index.html": "/index.html",
+    "main.3a32d059.css.map": "/static/css/main.3a32d059.css.map",
+    "main.885a2165.js.map": "/static/js/main.885a2165.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a32d059.css",
+    "static/js/main.885a2165.js"
+  ]
+}
