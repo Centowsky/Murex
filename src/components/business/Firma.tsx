@@ -28,7 +28,7 @@ const Firma: React.FC = () => {
         <div className="sm:w-full md:w-1/2 lg:w-1/3 p-2">
           <FirmaCard
             title="Szybka realizacja"
-            content="Potrzebujesz pilnie oczyścić rynny albo usunąć zagrażające bezpieczeństwu drzewo?"
+            content="Potrzebujesz pilnie oczyścić rynny albo usunąć zagrażające bezpieczeństwu drzewo? Zadzwoń już teraz!"
             iconName="FaClock"
           />
         </div>

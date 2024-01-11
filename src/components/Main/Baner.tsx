@@ -8,7 +8,9 @@ const Banner: React.FC = () => {
           <p className="text-2xl p-2">
             Masz więcej pytań? Skontaktuj się z nami:
           </p>
-          <p className="text-2xl font-bold p-2">530-301-301</p>
+          <p className="text-2xl font-bold p-2 transition-transform transform hover:scale-110">
+            <a href="tel:530301301">530-301-301</a>
+          </p>
         </div>
       </div>
     </div>

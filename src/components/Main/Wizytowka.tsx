@@ -17,7 +17,7 @@ const Wizytowka: React.FC = () => {
                 <p>
                   TEL:{" "}
                   <span className="text-orange-500 transform hover:transform hover:translate-x-2">
-                    530-301-301
+                    <a href="tel:530301301">530-301-301</a>
                   </span>
                 </p>
                 <p>NIP: 597-156-33-173</p>

@@ -10,15 +10,17 @@ const FirmaInfo: React.FC = () => {
         <div>
           <h1 className="text-3xl font-bold">Nasza firma</h1>
           <p className="text-xl">
-            Unde ea architecto qui eveniet sapiente eius eius. Impedit sint
-            error illum sunt aperiam et quisquam. Aspernatur cum sit. Esse
-            laborum veniam. Sed possimus quos aut quia repudiandae
-            necessitatibus cupiditate incidunt vel. Quia ipsa odit debitis ipsum
-            ut ut ad qui. Numquam itaque id ea atque facere justo explicabo
-            illo. Consequatur quo consequatur molestias. Enim quis quo rem.
-            Temporibus neque accusamus voluptatibus sunt unde. Tenetur velit
-            molestias iure saepe ea est et est. Molestiae consectetur pariatur
-            recusandae in iste hic. Vel animi temporibus.
+            Nasza firma to dynamiczna jednostka specjalizująca się w
+            kompleksowych usługach budowlanych oraz wynajmie koparek-ładowarek i
+            podnośników. Z bogatym doświadczeniem i zaangażowaniem w branży,
+            oferujemy nie tylko solidne wykonanie prac budowlanych, ale również
+            wynajem nowoczesnych maszyn, które umożliwiają efektywne i
+            bezpieczne realizowanie różnorodnych projektów. Nasza filozofia
+            opiera się na innowacjach, profesjonalizmie oraz indywidualnym
+            podejściu do każdego klienta. Dążymy do zapewnienia kompleksowej
+            obsługi, dbając o najwyższe standardy jakości, co sprawia, że
+            stajemy się godnym partnerem w realizacji różnorodnych przedsięwzięć
+            budowlanych.
           </p>
           <p className="text-xl text-right font-bold p-2">
             Jarosław{" "}

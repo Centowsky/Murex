@@ -15,7 +15,8 @@ const Oferta: React.FC = () => (
         {
           id: "wycinka",
           title: "Wycinka i pielęgnacja drzew",
-          content: "W każdym miejscu, nawet trudno dostępnym.",
+          content:
+            "Zapewniamy kompleksowe usługi w zakresie wycinania i pielęgnacji drzew, dbając o estetykę oraz bezpieczeństwo Twojego otoczenia. Drzewo sprawia zagrożenie? My się tym zajmiemy!",
           link: "/oferta/wycinka",
         },
         {
@@ -29,14 +30,14 @@ const Oferta: React.FC = () => (
           id: "koparki",
           title: "Wynajem koparko-ładowarki",
           content:
-            "Oferujemy kompleksową gamę usług wynajmu koparko-ładowarki i nie tylko.",
+            "Zapewniamy kompleksową gamę usług wynajmu koparko-ładowarki, spełniając wszelkie oczekiwania naszych klientów. Nasza nowoczesna flota maszyn pozwala efektywnie i bezpiecznie przeprowadzić prace budowlane oraz ziemne. ",
           link: "/oferta/koparki",
         },
         {
           id: "wysokosci",
           title: "Prace na wysokości",
           content:
-            "Wykonujemy prace na wysokości. Czyścimy rynny, montujemy siatki oraz reklamy, myjemy dachy i wymieniamy dachówki. Oferujemy szeroki zakres usług.",
+            "Zajmujemy się kompleksowym wykonywaniem prac na wysokości, zapewniając naszym klientom bezpieczeństwo, precyzję oraz efektywność. Wykonujemy różnorodne zadania, od czyszczenia rynien po montaż siatek reklamowych, a także mycie dachów i wymianę dachówek.",
           link: "/oferta/wysokosc",
         },
       ].map((card) => (
