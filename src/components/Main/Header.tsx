@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/components/Header.scss";
+import ScrollToButton from "./ScrollToButton";
 
 interface HeaderProps {
   currentPage: string;
@@ -27,11 +28,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
                 </a>
               </button>
 
-              <button className="text-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-40 hover:shadow-lg transform hover:scale-105 transition duration-500 ease-in-out">
-                <a href="/kontakt" target="_blank">
+              {/* <button className="text-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-40 hover:shadow-lg transform hover:scale-105 transition duration-500 ease-in-out">
+                <a href="#kontakt" target="_blank">
                   Kontakt
                 </a>
-              </button>
+              </button> */}
+              <ScrollToButton />
             </div>
           </div>
         </header>

@@ -30,7 +30,7 @@ const Oferta: React.FC = () => (
           id: "koparki",
           title: "Wynajem koparko-ładowarki",
           content:
-            "Zapewniamy kompleksową gamę usług wynajmu koparko-ładowarki, spełniając wszelkie oczekiwania naszych klientów. Nasza nowoczesna flota maszyn pozwala efektywnie i bezpiecznie przeprowadzić prace budowlane oraz ziemne. ",
+            "Zapewniamy kompleksową gamę usług wynajmu koparko-ładowarki, spełniając wszelkie oczekiwania naszych klientów. Nasze maszyny pozwalają efektywnie i bezpiecznie przeprowadzić prace budowlane oraz ziemne. ",
           link: "/oferta/koparki",
         },
         {

@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
           Centowsky
         </a>
       </p>
-      <p>Polityka prywatności</p>
     </footer>
   );
 };

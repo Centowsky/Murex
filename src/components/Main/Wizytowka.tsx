@@ -2,7 +2,10 @@ import React from "react";
 
 const Wizytowka: React.FC = () => {
   return (
-    <div className="rounded-lg shadow-lg w-full flex flex-col md:flex-row p-4">
+    <div
+      className="rounded-lg shadow-lg w-full flex flex-col md:flex-row p-4"
+      id="kontakt"
+    >
       {Array(3)
         .fill(null)
         .map((_, index) => (
@@ -39,7 +42,7 @@ const Wizytowka: React.FC = () => {
                 <p className="text-xl font-bold">Usługi</p>
                 <ul className="list-disc list-inside ml-4">
                   <li>Podnośniki Koszowe Myślibórz i okolice</li>
-                  <li>Karczowanie działek, wycinanie krzaków</li>
+                  <li>Usługi koparko-ładowarką</li>
                 </ul>
               </>
             ) : null}

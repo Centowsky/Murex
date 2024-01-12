@@ -14,7 +14,7 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const delay = 2000;
+    const delay = 1950;
 
     const timeout = setTimeout(() => {
       setLoading(false);

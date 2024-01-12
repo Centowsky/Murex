@@ -1,11 +1,11 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import drzewo from "../../assets/cards/drzewo.webp";
+import koparka from "../../assets/cards/koparka.webp";
+import podnosniki from "../../assets/info2.webp";
+import wysokosc from "../../assets/info3.webp";
 import Header from "../main/Header";
 import Navbar from "../main/Navbar";
-import { useParams } from "react-router-dom";
-import wycinka from "../../assets/info1.webp";
-import podnosniki from "../../assets/info2.webp";
-import koparki from "../../assets/info3.webp";
-import wysokosc from "../../assets/info3.webp";
 import Wizytowka from "../main/Wizytowka";
 
 const OfertaDetail: React.FC = () => {
@@ -41,9 +41,8 @@ const OfertaDetail: React.FC = () => {
           </p>
         </div>
       ),
-      description:
-        "Nasza firma oferuje usługi wycinania i pielęgnacji drzew, w tym trudno dostępnych miejscach oraz na terenach publicznych.",
-      img: wycinka,
+      description: "Wysokie drzewa to dla nas nie problem.",
+      img: drzewo,
     },
 
     {
@@ -52,10 +51,10 @@ const OfertaDetail: React.FC = () => {
       content: (
         <div>
           <p>
-            Nasza firma specjalizuje się w wynajmie nowoczesnych podnośników
-            koszowych o imponującej maksymalnej wysokości roboczej do 28 metrów.
-            Dzięki temu zapewniają one dostęp do trudno dostępnych miejsc,
-            umożliwiając wykonywanie prac na różnych wysokościach.
+            Nasza firma specjalizuje się w wynajmie podnośników koszowych o
+            maksymalnej wysokości roboczej do 28 metrów. Dzięki temu zapewniają
+            one dostęp do trudno dostępnych miejsc, umożliwiając wykonywanie
+            prac na różnych wysokościach.
           </p>
           <br></br>
           <p>
@@ -68,13 +67,12 @@ const OfertaDetail: React.FC = () => {
           <p>
             Oferujemy elastyczne warunki wynajmu podnośników koszowych,
             dostosowane do indywidualnych potrzeb klienta. Dzięki naszym
-            nowoczesnym maszynom, prace na wysokości stają się efektywne i łatwe
-            do przeprowadzenia.
+            maszynom, prace na wysokości stają się efektywne i łatwe do
+            przeprowadzenia.
           </p>
         </div>
       ),
-      description:
-        "Oferujemy wynajem podnośników koszowych z dużym zasięgiem, zapewniających bezpieczne warunki pracy na wysokości.",
+      description: "Montaż sygnalizacji świetlnej w Myśliborzu.",
       img: podnosniki,
     },
     {
@@ -96,9 +94,8 @@ const OfertaDetail: React.FC = () => {
           </p>
         </div>
       ),
-      description:
-        "Nasza firma oferuje wynajem różnych maszyn budowlanych, w tym koparko-ładowarek, dostępnych na różne cele budowlane.",
-      img: koparki,
+      description: "Prace ziemne koparko-ładowarką w miejscowości Ławy.",
+      img: koparka,
     },
 
     {
@@ -123,8 +120,7 @@ const OfertaDetail: React.FC = () => {
           </p>
         </div>
       ),
-      description:
-        "Specjalizujemy się w pracach na wysokości, takich jak montaż siatek, reklam, mycie dachów i inne usługi związane z pracami na wysokości.",
+      description: "Mycie elewacji w miejscowości Klicko.",
       img: wysokosc,
     },
   ];
@@ -150,12 +146,16 @@ const OfertaDetail: React.FC = () => {
         <h2 className="text-5xl font-bold p-2 text-center">
           {selectedOffer.title}
         </h2>
-        <div className="flex flex-row p-8">
-          <div className="w-1/2 flex items-center">
+        <div className="flex flex-col md:flex-row p-8">
+          <div className="md:w-1/2 flex items-center">
             <p className="text-2xl p-2">{selectedOffer.content}</p>
           </div>
-          <div className="w-1/2">
-            <img src={selectedOffer.img} alt={selectedOffer.title}></img>
+          <div className="md:w-1/2 mt-4 md:mt-0">
+            <img
+              src={selectedOffer.img}
+              alt={selectedOffer.description}
+              className="w-full h-auto"
+            />
             <p className="text-lg">{selectedOffer.description}</p>
           </div>
         </div>
