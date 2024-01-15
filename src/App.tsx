@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import "../src/styles/App.scss";
 import Footer from "./components/main/Footer";
 import ScrollToTopButton from "./components/main/ScrollToTopButton";
@@ -12,15 +12,24 @@ import { Hourglass } from "react-loader-spinner";
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const delay = 1950;
 
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, delay);
+    // Check if the loader has already been shown
+    const hasLoaderBeenShown = localStorage.getItem("loaderShown");
 
-    return () => clearTimeout(timeout);
+    if (hasLoaderBeenShown) {
+      setLoading(false);
+    } else {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem("loaderShown", "true");
+      }, delay);
+
+      return () => clearTimeout(timeout);
+    }
   }, []);
 
   return (
@@ -41,6 +50,7 @@ const App: React.FC = () => {
         <>
           <Routes>
             <Route path="" element={<Home />} />
+            <Route path="*" element={<Home />} />
             <Route path="/o-nas" element={<About />} />
             <Route path="/oferta" element={<Oferta />} />
             <Route path="/oferta/:offerId" element={<OfertaDetail />} />

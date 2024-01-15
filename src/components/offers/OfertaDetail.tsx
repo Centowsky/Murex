@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import drzewo from "../../assets/cards/drzewo.webp";
 import koparka from "../../assets/cards/koparka.webp";
 import podnosniki from "../../assets/info2.webp";
@@ -10,6 +10,7 @@ import Wizytowka from "../main/Wizytowka";
 
 const OfertaDetail: React.FC = () => {
   const { offerId } = useParams<{ offerId: string }>();
+  const navigate = useNavigate();
 
   const ofertaList = [
     {
@@ -94,7 +95,7 @@ const OfertaDetail: React.FC = () => {
           </p>
         </div>
       ),
-      description: "Prace ziemne koparko-ładowarką w miejscowości Ławy.",
+      description: "Prace ziemne koparko-ładowarką",
       img: koparka,
     },
 
@@ -127,16 +128,15 @@ const OfertaDetail: React.FC = () => {
 
   const selectedOffer = ofertaList.find((offer) => offer.id === offerId);
 
+  useEffect(() => {
+    if (!selectedOffer) {
+      console.log("Redirecting to /oferta");
+      navigate("/oferta");
+    }
+  }, [selectedOffer, navigate]);
+
   if (!selectedOffer) {
-    return (
-      <>
-        <Navbar />
-        <Header currentPage="Oferta" />
-        <div className="text-3xl font-bold ">
-          Nie znaleziono pozycji na liscie ofert.
-        </div>
-      </>
-    );
+    return null; // Avoid rendering the rest of the component
   }
   return (
     <>

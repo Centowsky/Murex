@@ -1,15 +1,43 @@
 import React, { useState, useEffect } from "react";
-import s1 from "../../assets/slider/1.webp";
-import s2 from "../../assets/slider/2.webp";
-import s3 from "../../assets/slider/3.webp";
-import s4 from "../../assets/slider/4.webp";
-import s5 from "../../assets/slider/5.webp";
-import s6 from "../../assets/slider/6.webp";
-import s7 from "../../assets/slider/7.webp";
-import s8 from "../../assets/slider/8.webp";
-import s9 from "../../assets/slider/9.webp";
+import s1 from "../../assets/slider/s1.webp";
+import s2 from "../../assets/slider/s2.webp";
+import s3 from "../../assets/slider/s3.webp";
+import s4 from "../../assets/slider/s4.webp";
+import s5 from "../../assets/slider/s5.webp";
+import s6 from "../../assets/slider/s6.webp";
+import s7 from "../../assets/slider/s7.webp";
+import s8 from "../../assets/slider/s8.webp";
+import s9 from "../../assets/slider/s9.webp";
+import s10 from "../../assets/slider/s10.webp";
+import s11 from "../../assets/slider/s11.webp";
+import s12 from "../../assets/slider/s12.webp";
+import s13 from "../../assets/slider/s13.webp";
+import s14 from "../../assets/slider/s14.webp";
+import s15 from "../../assets/slider/s15.webp";
+import s16 from "../../assets/slider/s16.webp";
+import s17 from "../../assets/slider/s17.webp";
+import s18 from "../../assets/slider/s18.webp";
 
-const images = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
+const images = [
+  s1,
+  s2,
+  s3,
+  s4,
+  s5,
+  s6,
+  s7,
+  s8,
+  s9,
+  s10,
+  s11,
+  s12,
+  s13,
+  s14,
+  s15,
+  s16,
+  s17,
+  s18,
+];
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
